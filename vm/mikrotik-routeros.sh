@@ -252,8 +252,13 @@ nfs | dir)
   DISK_IMPORT="-format qcow2"
   ;;
 btrfs)
-  DISK_EXT=""
+  DISK_EXT=".raw"
   DISK_REF="$VMID/"
+  DISK_IMPORT="-format raw"
+  ;;
+zfspool)
+  DISK_EXT=""
+  DISK_REF=""
   DISK_IMPORT="-format raw"
   ;;
 esac
