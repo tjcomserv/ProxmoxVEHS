@@ -256,6 +256,11 @@ btrfs)
   DISK_REF="$VMID/"
   DISK_IMPORT="-format raw"
   ;;
+zfspool)
+  DISK_EXT=""
+  DISK_REF=""
+  DISK_IMPORT="-format raw"
+  ;;
 esac
 
 DISK_VAR="vm-${VMID}-disk-0${DISK_EXT:-}"
